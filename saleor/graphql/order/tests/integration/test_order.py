@@ -49,6 +49,7 @@ def test_user_cannot_manage_order_after_loosing_the_channel_access(
             ],
         },
     }
+
     response = staff_api_client.post_graphql(
         ORDER_FULFILL_MUTATION, fulfill_order_variables
     )
